@@ -71,7 +71,7 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
 RUN wget https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && chmod +x chromedriver && mv -f chromedriver /usr/bin/ && rm chromedriver_linux64.zip
 RUN wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip && unzip opencv.zip && mv -f opencv-master /usr/bin/ && rm opencv.zip
 # Git Clone Main Repo And Config As WorkDir
-RUN git clone https://github.com/GertShnaiders/sunday-userbot /root/fridaybot
+RUN git clone https://github.com/GertShnaiders/SundayUserbot /root/sundaybot
 RUN mkdir /root/sundaybot/bin/
 WORKDIR /root/sundaybot/
 RUN chmod +x /usr/local/bin/*
