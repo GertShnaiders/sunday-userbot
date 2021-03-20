@@ -1,4 +1,4 @@
-FROM gertshnaiders/sundayuserbot
+FROM gertshnaiders/sundayuserbot:alpine
 
 #clonning repo 
 RUN git clone https://github.com/GertShnaiders/SundayUserbot.git /root/sundaybot
